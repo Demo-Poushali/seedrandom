@@ -9,7 +9,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                checkout scm   // Pulls your repo code
+              git branch: 'feature-test-pr' , url: 'https://github.com/Demo-Poushali/seedrandom.git'  
             }
         }
 
